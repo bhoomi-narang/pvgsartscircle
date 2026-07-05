@@ -35,11 +35,15 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const PHONE = "9284544126";
-const PHONE_DISPLAY = "९२८४५४४१२६";
-const WHATSAPP = "919284544126";
+const PHONE1 = "7385689938";
+const PHONE2 = "9309409320";
+const PHONE_DISPLAY1 = "७३८५६९९३८";
+const PHONE_DISPLAY2 = "९३०९४०९३२०";
+const WHATSAPP1 = "7385689938";
+const WHATSAPP2 = "9309409320";
 const MAPS_URL = "https://maps.google.com/?q=Bharat+Natya+Mandir+Sadashiv+Peth+Pune";
 const BOOKING_URL = "#tickets"; // Placeholder — replace with BookMyShow/District link
+const Insta = "https://www.instagram.com/pvgartscircle?igsh=MXdwM2xrYThrYng0MQ==";
 
 function Index() {
   const [loading, setLoading] = useState(true);
@@ -744,7 +748,7 @@ function Tickets() {
             />
             <div className="relative">
               <SectionEyebrow>Tickets</SectionEyebrow>
-              <h2 className="font-devanagari mt-4 text-4xl md:text-5xl text-gold-gradient">
+              <h2 className="font-devanagari mt-4 text-4xl md:text-5xl leading-normal text-gold-gradient">
                 आपली जागा राखीव करा
               </h2>
               <div className="mx-auto mt-8 inline-flex items-baseline gap-2">
@@ -758,13 +762,7 @@ function Tickets() {
               <p className="mt-4 text-muted-foreground">Book Your Seats Now</p>
               <div className="mt-10 flex flex-wrap justify-center gap-4">
                 <a
-                  href={BOOKING_URL}
-                  className="rounded-full bg-gold-gradient px-10 py-4 text-base font-semibold text-primary-foreground shadow-[var(--shadow-gold)] transition hover:brightness-110 hover:scale-[1.02]"
-                >
-                  🎟 Book Tickets
-                </a>
-                <a
-                  href={`https://wa.me/${WHATSAPP}?text=I%20want%20to%20book%20tickets%20for%20Rang%20Tech...%20Rangat%20Navi!`}
+                  href={`https://wa.me/${WHATSAPP1}?text=I%20want%20to%20book%20tickets%20for%20Rang%20Tech...%20Rangat%20Navi!`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full border border-[var(--gold)]/40 bg-charcoal/40 px-10 py-4 text-base font-medium text-gold backdrop-blur hover:bg-charcoal/70"
@@ -792,21 +790,36 @@ function Contact() {
         <h2 className="font-devanagari mt-4 text-4xl md:text-5xl leading-normal text-gold-gradient">
           संपर्क
         </h2>
-        <div className="mt-10 glass-card rounded-2xl p-10">
-          <p className="text-[0.65rem] uppercase tracking-[0.35em] text-gold/70">
-            संपर्क
-          </p>
-          <p className="font-display mt-3 text-3xl text-foreground/95">अथर्व किरवे</p>
-          <p className="font-display mt-2 text-xl text-gold">📞 {PHONE_DISPLAY}</p>
+        <div className="mt-10 glass-card flex flex-col gap-6 rounded-2xl p-10">
+          <p className="font-display mt-3 text-3xl text-foreground/95">प्रज्वल मेरगळ</p>
+          <p className="font-display mt-2 text-xl text-gold">📞 {PHONE_DISPLAY1}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a
-              href={`tel:+91${PHONE}`}
+              href={`tel:+91${PHONE1}`}
               className="rounded-full bg-gold-gradient px-7 py-3 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-gold)]"
             >
               📞 Call Now
             </a>
             <a
-              href={`https://wa.me/${WHATSAPP}`}
+              href={`https://wa.me/${WHATSAPP1}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-[var(--gold)]/40 bg-charcoal/40 px-7 py-3 text-sm font-medium text-gold hover:bg-charcoal/70"
+            >
+              💬 WhatsApp
+            </a>
+          </div>
+          <p className="font-display mt-3 text-3xl text-foreground/95">भूमी नारंग</p>
+          <p className="font-display mt-2 text-xl text-gold">📞 {PHONE_DISPLAY2}</p>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <a
+              href={`tel:+91${PHONE2}`}
+              className="rounded-full bg-gold-gradient px-7 py-3 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-gold)]"
+            >
+              📞 Call Now
+            </a>
+            <a
+              href={`https://wa.me/${WHATSAPP2}`}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-[var(--gold)]/40 bg-charcoal/40 px-7 py-3 text-sm font-medium text-gold hover:bg-charcoal/70"
@@ -849,7 +862,9 @@ function Footer() {
               Follow
             </p>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><a className="text-muted-foreground hover:text-gold" href="#">Instagram</a></li>
+              <li><a className="text-muted-foreground hover:text-gold" href="https://www.instagram.com/pvgartscircle?igsh=MXdwM2xrYThrYng0MQ==" target="_blank" rel="noopener noreferrer">
+                Instagram
+              </a></li>
             </ul>
           </div>
           <div>
@@ -858,8 +873,11 @@ function Footer() {
             </p>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
-                <a className="text-muted-foreground hover:text-gold" href={`tel:+91${PHONE}`}>
-                  📞 {PHONE_DISPLAY}
+                <a className="text-muted-foreground hover:text-gold" href={`tel:+91${PHONE1}`}>
+                  📞 {PHONE_DISPLAY1}
+                </a>
+                <a className="text-muted-foreground hover:text-gold" href={`tel:+91${PHONE2}`}>
+                  📞 {PHONE_DISPLAY2}
                 </a>
               </li>
               <li>
