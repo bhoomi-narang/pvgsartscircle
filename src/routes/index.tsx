@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
 
 const PHONE1 = "7385689938";
 const PHONE2 = "9309409320";
-const PHONE_DISPLAY1 = "७३८५६९९३८";
+const PHONE_DISPLAY1 = "७३८५६८९९३८";
 const PHONE_DISPLAY2 = "९३०९४०९३२०";
 const WHATSAPP1 = "7385689938";
 const WHATSAPP2 = "9309409320";
@@ -85,7 +85,7 @@ function Index() {
       <Venue />
       <Awards />
       <Gallery />
-      <Organisers />
+      <Presentors />
       <Tickets />
       <Contact />
       
@@ -136,7 +136,7 @@ function CurtainLoader() {
             <img
               src={LOGO_URL}
               alt="PVG's COET Arts Circle"
-              className="relative h-40 w-40 md:h-52 md:w-52 object-contain animate-fade-up drop-shadow-[0_10px_40px_rgba(0,0,0,0.6)]"
+              className="relative h-40 w-40 md:h-52 md:w-52 object-contain rounded-full animate-fade-up drop-shadow-[0_10px_40px_rgba(0,0,0,0.6)]"
               style={{ animation: "fade-up 1.1s ease-out both, float-slow 5s ease-in-out infinite 1.1s" }}
             />
           </div>
@@ -168,7 +168,7 @@ function Nav({ open, setOpen }: { open: boolean; setOpen: (v: boolean) => void }
               <img
                 src={LOGO_URL}
                 alt="PVG's COET Arts Circle"
-                className="h-full w-full object-contain p-0.5"
+                className="h-full w-full  object-contain p-0.5"
               />
             </span>
             <span className="flex flex-col leading-tight min-w-0">
@@ -240,7 +240,7 @@ function Hero() {
         <img
           src={LOGO_URL}
           alt="PVG's COET Arts Circle"
-          className="h-24 w-24 md:h-28 md:w-28 object-contain animate-fade-up drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)]"
+          className="h-24 w-24 md:h-28 md:w-28 object-contain animate-fade-up rounded-full drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)]"
         />
         <p
           className="mt-6 animate-fade-up uppercase text-gold/80 tracking-normal text-xl "
@@ -336,16 +336,17 @@ function About() {
           उत्कृष्ट तांत्रिक मांडणी आणि तितक्याच प्रभावी अभिनयासह हा रंगमंचीय अनुभव प्रत्येक रसिकासाठी
           अविस्मरणीय ठरेल.
         </p>
-        <div className="mt-10 inline-flex flex-col items-center gap-1">
-          <p className="text-[0.65rem] uppercase tracking-[0.4em] text-gold/70">
-            निर्मिती
-          </p>
-          <p className="font-display text-lg text-gold-gradient">{ORG_SHORT}</p>
-        </div>
+        <div className="mt-18 items-center text-center gap-1">
+        <p className="text-[0.85rem] uppercase mb-3 tracking-[0.2em] text-gold/70">
+          निर्मिती
+        </p>
+        <p className="font-display text-lg text-gold-gradient">शुभम होतचंदानी <br /> साईश धुरी</p>
+      </div>
       </div>
     </section>
   );
 }
+
 
 /* ---------------- Plays ---------------- */
 function Plays() {
@@ -701,12 +702,12 @@ function Gallery() {
 }
 
 
-/* ---------------- Organisers ---------------- */
-function Organisers() {
+/* ---------------- Presentors ---------------- */
+function Presentors() {
   return (
     <section className="relative py-20">
       <div className="mx-auto max-w-3xl px-5 text-center reveal">
-        <SectionEyebrow>आयोजक · Organised By</SectionEyebrow>
+        <SectionEyebrow>प्रस्तुत करणारे · Presented By</SectionEyebrow>
         <div className="mt-8 glass-card rounded-2xl px-8 py-12 hover-lift">
           <div className="mx-auto grid h-28 w-28 place-items-center rounded-full border border-[var(--gold)]/40 bg-black/50 p-2 shadow-[var(--shadow-gold)]">
             <img
@@ -915,7 +916,7 @@ function SectionEyebrow({
 }) {
   return (
     <p
-      className={`text-[0.65rem] uppercase tracking-[0.45em] text-gold/80 ${className}`}
+      className={`text-[0.65rem] uppercase tracking-[0.25em] text-gold/80 ${className}`}
     >
       {children}
     </p>
