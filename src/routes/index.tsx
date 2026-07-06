@@ -42,7 +42,6 @@ const PHONE_DISPLAY2 = "९३०९४०९३२०";
 const WHATSAPP1 = "7385689938";
 const WHATSAPP2 = "9309409320";
 const MAPS_URL = "https://maps.google.com/?q=Bharat+Natya+Mandir+Sadashiv+Peth+Pune";
-const BOOKING_URL = "#tickets"; // Placeholder — replace with BookMyShow/District link
 const Insta = "https://www.instagram.com/pvgartscircle?igsh=MXdwM2xrYThrYng0MQ==";
 
 function Index() {
@@ -270,13 +269,17 @@ function Hero() {
           className="mt-10 flex flex-wrap items-center justify-center gap-3 animate-fade-up"
           style={{ animationDelay: "0.55s" }}
         >
-          <span className="font-devanagari rounded-full border border-[var(--gold)]/30 px-5 py-2 text-sm text-gold">
+          <a 
+            href="#plays"
+            className="font-devanagari rounded-full border border-[var(--gold)]/30 px-5 py-2 text-sm text-gold">
             कोयता
-          </span>
+          </a>
           <span className="text-gold/40">·</span>
-          <span className="font-devanagari rounded-full border border-[var(--gold)]/30 px-5 py-2 text-sm text-gold">
+          <a 
+            href="#plays"
+            className="font-devanagari rounded-full border border-[var(--gold)]/30 px-5 py-2 text-sm text-gold">
             बिजागिरी
-          </span>
+          </a>
         </div>
 
         <div
@@ -284,7 +287,7 @@ function Hero() {
           style={{ animationDelay: "0.7s" }}
         >
           <a
-            href={BOOKING_URL}
+            href="#tickets"
             className="rounded-full bg-gold-gradient px-8 py-3.5 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-gold)] transition hover:brightness-110 hover:scale-[1.02]"
           >
             🎟 तिकिटे बुक करा
@@ -300,7 +303,7 @@ function Hero() {
         </div>
 
         <div
-          className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-xs text-muted-foreground animate-fade-up"
+          className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-l text-muted-foreground animate-fade-up"
           style={{ animationDelay: "0.85s" }}
         >
           <span>📅 १४ जुलै</span>
@@ -713,7 +716,7 @@ function Presentors() {
             <img
               src={LOGO_URL}
               alt="PVG's COET Arts Circle"
-              className="h-full w-full object-contain"
+              className="h-full w-full rounded-full object-contain"
             />
           </div>
           <h3 className="font-devanagari mt-6 text-2xl md:text-3xl text-foreground/95 leading-snug">
@@ -876,7 +879,8 @@ function Footer() {
               <li>
                 <a className="text-muted-foreground hover:text-gold" href={`tel:+91${PHONE1}`}>
                   📞 {PHONE_DISPLAY1}
-                </a>
+                </a> <br />
+
                 <a className="text-muted-foreground hover:text-gold" href={`tel:+91${PHONE2}`}>
                   📞 {PHONE_DISPLAY2}
                 </a>
