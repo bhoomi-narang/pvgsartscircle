@@ -308,7 +308,7 @@ function Hero() {
         >
           <span>📅 १४ जुलै</span>
           <span className="text-gold/40">•</span>
-          <span>🕗 रात्री ८:००</span>
+          <span>🕗 रात्री ८:३० </span>
           <span className="text-gold/40">•</span>
           <span>📍 भारत नाट्य मंदिर, पुणे</span>
           <span className="text-gold/40">•</span>
@@ -447,11 +447,11 @@ function Plays() {
 function ShowDetails() {
   const items = [
     { icon: "📅", label: "दिनांक", value: "१४ जुलै" },
-    { icon: "🕗", label: "वेळ", value: "रात्री ८:०० ते ११:००" },
+    { icon: "🕗", label: "वेळ", value: "रात्री ८:३०  ते ११:००" },
     { icon: "📍", label: "स्थळ", value: "भारत नाट्य मंदिर\nसदाशिव पेठ, पुणे" },
     { icon: "🎟", label: "प्रवेश शुल्क", value: "₹२००" },
     { icon: "🗣", label: "भाषा", value: "मराठी" },
-    { icon: "⏱", label: "वेळ", value: "सुमारे ३ तास" },
+    { icon: "⏱", label: "वेळ", value: "सुमारे २.३० तास" },
   ];
   return (
     <section id="details" className="relative py-24 md:py-32">
@@ -576,7 +576,7 @@ function Awards() {
   const bijagiriAwards = [
     {
       name: "पुरुषोत्तम करंडक",
-      items: ["काकाजी जोगळेकर पुरस्कार – द्वितीय सर्वोत्कृष्ट स्त्री अभिनय"],
+      items: ["काकाजी जोगळेकर पुरस्कार – दोन स्त्री अभिनय"],
     },
     {
       name: "शिवसेना करंडक",
