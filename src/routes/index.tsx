@@ -823,7 +823,7 @@ function Contact() {
               📞 Call Now
             </a>
             <a
-              href={`https://wa.me/${WHATSAPP2}`}
+              href={`https://wa.me/91${WHATSAPP2}`}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-[var(--gold)]/40 bg-charcoal/40 px-7 py-3 text-sm font-medium text-gold hover:bg-charcoal/70"
