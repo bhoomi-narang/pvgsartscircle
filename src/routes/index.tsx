@@ -774,9 +774,6 @@ function Tickets() {
                   💬 Book via WhatsApp
                 </a>
               </div>
-              <p className="mt-6 text-xs text-muted-foreground">
-                Booking coming soon on BookMyShow · District · Direct Payment
-              </p>
             </div>
           </div>
         </div>
