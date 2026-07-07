@@ -278,7 +278,7 @@ function Hero() {
           <a 
             href="#plays"
             className="font-devanagari rounded-full border border-[var(--gold)]/30 px-5 py-2 text-sm text-gold">
-            बिजागिरी
+            बिजागरी 
           </a>
         </div>
 
@@ -310,7 +310,7 @@ function Hero() {
           <span className="text-gold/40">•</span>
           <span>🕗 रात्री ८:३० </span>
           <span className="text-gold/40">•</span>
-          <span>📍 भारत नाट्य मंदिर, पुणे</span>
+          <span>📍 भरत नाट्य मंदिर, पुणे</span>
           <span className="text-gold/40">•</span>
           <span>🎟 ₹२००</span>
         </div>
@@ -368,10 +368,10 @@ function Plays() {
       directors: ["अथर्व किरवे", "साईश धुरी"],
     },
     {
-      title: "बिजागिरी",
-      subtitle: "Bijagiri",
+      title: "बिजागरी  ",
+      subtitle: "Bijagari",
       img: bijagiriImg,
-      desc: `घरातील जुनं बिजागर जसं दोन दारांना जोडून ठेवतं, तसंच नात्यांनाही जपणारा एक अदृश्य धागा असतो. 'बिजागिरी' ही एका आजी आणि तिच्या नातीमधील नात्याची हळवी, कोमल आणि मनाला स्पर्शून जाणारी कथा आहे.
+      desc: `घरातील जुनं बिजागर जसं दोन दारांना जोडून ठेवतं, तसंच नात्यांनाही जपणारा एक अदृश्य धागा असतो. 'बिजागरी ' ही एका आजी आणि तिच्या नातीमधील नात्याची हळवी, कोमल आणि मनाला स्पर्शून जाणारी कथा आहे.
 
 वेगाने बदलणाऱ्या काळात हरवत चाललेले संवाद, पिढ्यांमधील विचारांचा संघर्ष, आठवणींची ऊब आणि नात्यांमधील न बोललेलं प्रेम यांचं अत्यंत संवेदनशील चित्रण या एकांकिकेत अनुभवायला मिळतं. प्रत्येक प्रसंगात माणुसकी, जिव्हाळा आणि कुटुंबव्यवस्थेतील भावनिक गुंतागुंत प्रभावीपणे उलगडत जाते.
 
@@ -448,7 +448,7 @@ function ShowDetails() {
   const items = [
     { icon: "📅", label: "दिनांक", value: "१४ जुलै" },
     { icon: "🕗", label: "वेळ", value: "रात्री ८:३०  ते ११:००" },
-    { icon: "📍", label: "स्थळ", value: "भारत नाट्य मंदिर\nसदाशिव पेठ, पुणे" },
+    { icon: "📍", label: "स्थळ", value: "भरत नाट्य मंदिर\nसदाशिव पेठ, पुणे" },
     { icon: "🎟", label: "प्रवेश शुल्क", value: "₹२००" },
     { icon: "🗣", label: "भाषा", value: "मराठी" },
     { icon: "⏱", label: "वेळ", value: "सुमारे २.३० तास" },
@@ -630,7 +630,7 @@ function Awards() {
         </div>
 
         <div className="mt-16 reveal">
-          <h3 className="font-devanagari text-center text-3xl leading-normal text-gold-gradient">बिजागिरी</h3>
+          <h3 className="font-devanagari text-center text-3xl leading-normal text-gold-gradient">बिजागरी </h3>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {bijagiriAwards.map((award) => (
               <div
