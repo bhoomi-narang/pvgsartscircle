@@ -122,28 +122,6 @@ function CurtainLoader() {
           boxShadow: "inset 20px 0 60px oklch(0 0 0 / 60%)",
         }}
       />
-      <div className="absolute inset-0 grid place-items-center">
-        <div className="text-center">
-          <div className="relative mx-auto grid place-items-center">
-            <div
-              className="absolute inset-0 -m-10 rounded-full blur-3xl animate-shimmer"
-              style={{
-                background:
-                  "radial-gradient(circle, oklch(0.82 0.14 82 / 55%) 0%, transparent 65%)",
-              }}
-            />
-            <img
-              src={LOGO_URL}
-              alt="PVG's COET Arts Circle"
-              className="relative h-40 w-40 md:h-52 md:w-52 object-contain rounded-full animate-fade-up drop-shadow-[0_10px_40px_rgba(0,0,0,0.6)]"
-              style={{ animation: "fade-up 1.1s ease-out both, float-slow 5s ease-in-out infinite 1.1s" }}
-            />
-          </div>
-          <p className="font-devanagari mt-6 text-gold-gradient text-2xl md:text-4xl animate-shimmer">
-            रंग तेच... रंगत नवी!
-          </p>
-        </div>
-      </div>
     </div>
   );
 }
